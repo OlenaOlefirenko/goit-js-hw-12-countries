@@ -1,5 +1,6 @@
 import debounce from 'lodash.debounce';
 import API from './fetchCountries.js';
+
 import listContries from '../templates/list-countries.hbs';
 import countryCard from '../templates/marcup-countries.hbs';
 
@@ -21,7 +22,6 @@ function onSearch() {
   if (!countrySearch) {
     return;
   }
-
   API.fetchCountries(countrySearch).then(isFoundCountry).catch(onError);
 }
 
@@ -42,6 +42,7 @@ function tooManyCountries() {
     text: 'Too many matches found. Please enter a more specific query!',
     delay: 2500,
     width: '500px',
+    minHeight: '50px',
   });
 }
 
@@ -55,6 +56,7 @@ function noResult() {
     text: 'no matches found try a different search!',
     delay: 2500,
     width: '500px',
+    minHeight: '50px',
   });
 }
 
@@ -63,5 +65,6 @@ function onError() {
     text: 'Please enter correct query',
     delay: 2500,
     width: '500px',
+    minHeight: '50px',
   });
 }
