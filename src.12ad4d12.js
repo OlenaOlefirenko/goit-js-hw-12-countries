@@ -24,4 +24,4 @@ var t,e=arguments[3];!function(e,n){"object"==typeof exports&&"undefined"!=typeo
 },{"./images/world-map.jpg":[["world-map.9e176144.jpg","r35F"],"r35F"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./js/search"),require("./styles.css");
 },{"./js/search":"HU2o","./styles.css":"Tnu0"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-12-countries/src.306d81d6.js.map
+//# sourceMappingURL=/goit-js-hw-12-countries/src.12ad4d12.js.map
